@@ -8,8 +8,8 @@ func main() {
 	fmt.Printf("equeal: 321\nresult: %v\n", res)
 	res = reverse(-123)
 	fmt.Printf("equeal: -321\nresult: %v\n", res)
-	res = reverse(120)
-	fmt.Printf("equeal: 21\nresult: %v\n", res)
+	res = reverse(121)
+	fmt.Printf("equeal: 121\nresult: %v\n", res)
 	res = reverse(8085774586302733229)
 	fmt.Printf("equeal: 0\nresult: %v\n", res)
 }
