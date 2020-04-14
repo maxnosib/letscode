@@ -1,26 +1,26 @@
 // https://leetcode.com/problems/length-of-last-word/
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	l := lengthOfLastWord("Hello World")
 	fmt.Printf("equeal: 5\nresult: %v\n", l)
 	l = lengthOfLastWord("HelloWorld")
-	fmt.Printf("equeal: 0\nresult: %v\n", l)
+	fmt.Printf("equeal: 10\nresult: %v\n", l)
 	l = lengthOfLastWord("a ")
-	fmt.Printf("equeal: 0\nresult: %v\n", l)
+	fmt.Printf("equeal: 1\nresult: %v\n", l)
 }
 
 func lengthOfLastWord(s string) int {
+	s = strings.TrimSpace(s)
 	var res int
-	var isSpace bool
 	for _, r := range s {
-		if isSpace {
-			res++
-		}
+		res++
 		if fmt.Sprintf("%c", r) == " " {
-			isSpace = true
 			res = 0
 		}
 	}
