@@ -9,7 +9,7 @@ func main() {
 	l = lengthOfLastWord("HelloWorld")
 	fmt.Printf("equeal: 0\nresult: %v\n", l)
 	l = lengthOfLastWord("a ")
-	fmt.Printf("equeal: 1\nresult: %v\n", l)
+	fmt.Printf("equeal: 0\nresult: %v\n", l)
 }
 
 func lengthOfLastWord(s string) int {
